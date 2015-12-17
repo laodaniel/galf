@@ -1,0 +1,23 @@
+{
+  "name": "galf-heroku",
+  "version": "1.0.0",
+  "description": "Stickers Visualizer",
+  "repository": "https://github.com/laodaniel/galf-heroku",
+  "main": "express.js",
+  "scripts": {
+    "build": "cd .. && npm run build && cd build",
+    "start": "node express.js"
+  },
+  "authors": [
+    {
+      "name": "Daniel Lao",
+      "email": "laodaniel@gmail.com"
+    }
+  ],
+  "engines": {
+    "node": "5.2.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
