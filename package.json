@@ -8,7 +8,8 @@
     "build": "./node_modules/.bin/webpack --progress --profile --colors -p",
     "lint": "./node_modules/.bin/eslint *.js 'src/**/*.js'",
     "start": "./node_modules/.bin/webpack-dev-server --inline --hot --progress --profile --colors --debug --devtool=eval",
-    "test": "BIN='node_modules/.bin' && $BIN/babel-node $BIN/isparta cover $BIN/_mocha -- './src/**/*.test.js'"
+    "test": "BIN='node_modules/.bin' && $BIN/babel-node $BIN/isparta cover $BIN/_mocha -- './src/**/*.test.js'",
+    "heroku": "npm run build && cd build && npm install && npm start"
   },
   "authors": [
     {
