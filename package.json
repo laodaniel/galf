@@ -16,6 +16,9 @@
       "email": "laodaniel@gmail.com"
     }
   ],
+  "engines": {
+    "node": "5.2.0"
+  },
   "license": "SEE LICENSE IN README.md",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
