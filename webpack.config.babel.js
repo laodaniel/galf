@@ -1,6 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-// const proxy = path => ({ target: '', secure: false, bypass: () => path });
+const proxy = path => ({ target: '', secure: false, bypass: () => path });
 
 const config = {
   entry: './src/index.js',
@@ -57,7 +57,8 @@ const config = {
   },
   devServer: {
     proxy: {
-      // '/moulen.jpg': proxy('img/moulen.jpg')
+      '/verdana.js': proxy('src/fonts/verdana.js'),
+      '/verdana-bold.js': proxy('src/fonts/verdana-bold.js')
     }
   }
 };
